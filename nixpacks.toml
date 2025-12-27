@@ -1,0 +1,14 @@
+[phases.setup]
+# Ensure both Node (for Expo app) and Python (for Flask backend) are available
+nixPkgs = ["nodejs_18", "python311", "pip"]
+
+[phases.install]
+cmds = [
+  "pip install -r flight-scanner-app/backend/requirements.txt",
+  # Keep npm install if needed for the Expo app; harmless if already run by Nixpacks
+  "npm ci"
+]
+
+[start]
+cmd = "cd flight-scanner-app/backend && python3 server.py"
+
