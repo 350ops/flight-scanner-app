@@ -5,7 +5,7 @@ nixPkgs = ["nodejs_18", "python311Full"]
 
 [phases.install]
 cmds = [
-  "pip install -r flight-scanner-app/backend/requirements.txt",
+  "python3 -m pip install -r flight-scanner-app/backend/requirements.txt",
   # Keep npm install if needed for the Expo app; harmless if already run by Nixpacks
   "npm ci"
 ]
