@@ -1,4 +1,4 @@
-# Python
+# Python (Flask Server)
 __pycache__/
 *.py[cod]
 *$py.class
@@ -14,6 +14,32 @@ path/to/venv/
 *.csv
 *.pdf
 
+# Node.js / Expo (React Native App)
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
 # OS
 .DS_Store
 .DS_Store?
@@ -22,6 +48,7 @@ path/to/venv/
 .Trashes
 ehthumbs.db
 Thumbs.db
+*.pem
 
 # IDE
 .vscode/
@@ -38,3 +65,12 @@ Thumbs.db
 .env.local
 .env.*.local
 
+# TypeScript
+*.tsbuildinfo
+
+# Expo specific
+app-example
+
+# generated native folders
+/ios
+/android
